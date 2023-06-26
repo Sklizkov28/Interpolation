@@ -21,7 +21,9 @@ int factorial(int n) //факториал
 		return 1; // возвращаем факториал от нуля = 1
 
 	else
+ 	{
 		return n * factorial(n - 1);//вычисление факториала
+	}	
 }
 
 double NewtonOne(double a, double b, double x, double** delta, int n) // Первая Интерполяционная формула Ньютона
