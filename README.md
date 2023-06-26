@@ -26,13 +26,15 @@ int factorial(int n) //факториал
 	}	
 }
 
-double NewtonOne(double a, double b, double x, double** delta, int n) // Первая Интерполяционная формула Ньютона
+double NewtonOne(double a, double b, double x, double** delta, int n)// Первая Интерполяционная формула Ньютона
 {
+
 	double F = 0;
 	double h = (b - a) / n;//шаг интерполяции
 	double q = (x - a) / h;
 	double chislitel = 1;
 	for (int i = 0; i < n; i++)
+ 
 	{
 		for (int j = 0; j < i; j++)
 		{
